@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="search">
+          <a href="./index.html" class="logo">
+            <img
+              src="./assets/tiendamia-logo.svg"
+              alt="Logo store"
+              width="218"
+            />
+          </a>
+          <div class="form">
+            <form action="">
+              <input id="" type="text" placeholder="Buscar" />
+            </form>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Cómo comprar</a></li>
+            <li><a href="#">Costos y tarifas</a></li>
+            <li><a href="#">Mis pedidos</a></li>
+            <li><a href="#">Garantia</a></li>
+          </ul>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="block-product">
+          <div class="product-img-block">
+            <div class="list-img">
+              <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
+              <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
+            </div>
+            <div class="product-img">
+              <img
+                src="./assets/mock2.jpg"
+                alt="MacBook Pro 15'4"
+                width="218"
+              />
+            </div>
+          </div>
+
+          <!-- <div class="product-images-block">
+            <div class="thumbnail-container">
+              <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
+            </div>
+            <div class="thumbnail-container">
+              <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
+            </div>
+            <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
+          </div> -->
+
+          <div class="product-description-block">
+            <h1 class="title-product">Macbook Pro 15'4</h1>
+            <div class="select-color">
+              <label class="subtitle" for="color">Color</label>
+              <select type="text" placeholder="Selecciona un color">
+                <!-- Opciones de color aquí -->
+                <option value="value1">Value 1</option>
+                <option value="value2" selected>Value 2</option>
+                <option value="value3">Value 3</option>
+              </select>
+            </div>
+            <div class="description">
+              <h3 class="subtitle">Descripción</h3>
+              <div class="description-product">
+                Pantalla panorámica brillante o antirreflectante retroiluminada
+                por LED de 15,4 pulgadas (en diagonal) capaz de reproducir
+                millones de colores Resoluciones compatibles: 1.440 por 900
+                (nativa), 1.280 por 800, 1.152 por 720, 1.024 por 640 y 800 por
+                500 píxeles con una relación dimensional de 16:10; 1.024 por
+                768, 800 por 600 y 640 por 480 píxeles con una relación
+                dimensional de 4:3; 1.024 por 768, 800 por 600 y 640 por 480
+                píxeles con una relación dimensional ampliada de 4:3; 720 por
+                480 píxeles con una relación dimensional de 3:2; y 720 píxeles
+                por 480 con una relación dimensional ampliada de 3:2
+              </div>
+            </div>
+          </div>
+          <div class="product-detail-block">
+            <span class="title">Total:</span>
+            <span class="price">$750.00</span>
+            <div class="product-tax-policy">
+              Incluye Impuesto País y percepción AFIP, Incluye Impuesto País y
+              percepción AFIP,Incluye Impuesto País y percepción AFIP
+            </div>
+            <div class="product-send">
+              <img src="./assets/truck.png" alt="truck" />
+              <p>
+                Agrega el producto al carrito para conocer los costos de envío.
+              </p>
+            </div>
+            <div class="product-send">
+              <img src="./assets/plane.png" alt="plane" />
+              <p>
+                Recibí aproximadamente entre 10 y 15 días hábiles, seleccionando
+                envío normal.
+              </p>
+            </div>
+            <div class="product-button">
+              <span>1</span>
+              <button>Añadir al Carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-block">
+          <h1>Ofertas de la semana</h1>
+          <div class="product-container">
+            <article class="product-card">
+              <a href="./details.html">
+                <img
+                  src="./assets/mock2.jpg"
+                  alt="hamburger"
+                  class="product-img"
+                />
+                <div class="product-info">
+                  <span class="product-title">Macbook Pro 15'4</span>
+                  <span class="product-description">Space Gray</span>
+                  <div class="product-price-block">
+                    <span class="price">$750.00</span>
+                    <span class="discount">50% off</span>
+                  </div>
+                  <div class="product-tax-policy">
+                    Incluye Impuesto País y percepción AFIP
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product-card">
+              <a href="./details.html">
+                <img
+                  src="./assets/mock2.jpg"
+                  alt="hamburger"
+                  class="product-img"
+                />
+                <div class="product-info">
+                  <span class="product-title">Macbook Pro 15'4</span>
+                  <span class="product-description">Space Gray</span>
+                  <div class="product-price-block">
+                    <span class="price">$750.00</span>
+                    <span class="discount">50% off</span>
+                  </div>
+                  <div class="product-tax-policy">
+                    Incluye Impuesto País y percepción AFIP
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product-card">
+              <a href="./details.html">
+                <img
+                  src="./assets/mock2.jpg"
+                  alt="hamburger"
+                  class="product-img"
+                />
+                <div class="product-info">
+                  <span class="product-title">Macbook Pro 15'4</span>
+                  <span class="product-description">Space Gray</span>
+                  <div class="product-price-block">
+                    <span class="price">$750.00</span>
+                    <span class="discount">50% off</span>
+                  </div>
+                  <div class="product-tax-policy">
+                    Incluye Impuesto País y percepción AFIP
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="product-card">
+              <a href="./details.html">
+                <img
+                  src="./assets/mock2.jpg"
+                  alt="hamburger"
+                  class="product-img"
+                />
+                <div class="product-info">
+                  <span class="product-title">Macbook Pro 15'4</span>
+                  <span class="product-description">Space Gray</span>
+                  <div class="product-price-block">
+                    <span class="price">$750.00</span>
+                    <span class="discount">50% off</span>
+                  </div>
+                  <div class="product-tax-policy">
+                    Incluye Impuesto País y percepción AFIP
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns-container" id="footer-columns">
+          <div class="col">
+            <ul>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="">Audio</a></li>
+              <li><a href="">Auriculares</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Cómo comprar</a></li>
+              <li><a href="#">Formas de pago</a></li>
+              <li><a href="">Envios</a></li>
+              <li><a href="">Devoluciones</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Costos y tarifas</a></li>
+              <li><a href="#">Impuestos</a></li>
+              <li><a href="">Facturación</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Mis pedidos</a></li>
+              <li><a href="#">Pedir nuevamente</a></li>
+              <li><a href="">Lista de deseos</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Garantía de entrega</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <span class="copyright-copy">
+            &#169; Copyright Bequi. All rights reserved
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

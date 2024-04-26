@@ -1,0 +1,34 @@
+@import "./header.css";
+@import "./main.css";
+@import "./section.css";
+@import "./footer.css";
+@import "./details.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 5px;
+  height: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
