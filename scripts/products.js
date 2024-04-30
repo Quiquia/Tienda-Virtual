@@ -51,7 +51,7 @@ const listProduct = [];
 
 const prodOne = new Product(
   "001",
-  "Phone 1",
+  "Xiami 1",
   "Phone is fine, small, the wiew is large and beautiful",
   1000,
   50,
@@ -70,7 +70,7 @@ listProduct.push(prodOne);
 
 const prodTwo = new Product(
   "002",
-  "Phone 2",
+  "Iphone 2",
   "Phone is fine, small, the wiew is large and beautiful",
   1000,
   60,
@@ -85,7 +85,7 @@ listProduct.push(prodTwo);
 
 const prodThree = new Product(
   "003",
-  "Phone 3",
+  "Samsung 3",
   "Phone is fine, small, the wiew is large and beautiful",
   1000,
   40,
@@ -104,7 +104,7 @@ listProduct.push(prodThree);
 
 const prodFour = new Product(
   "004",
-  "Phone 4",
+  "Alcatel 4",
   "Phone is fine, small, the wiew is large and beautiful",
   1000,
   60,
@@ -123,7 +123,7 @@ listProduct.push(prodFour);
 
 const prodFive = new Product(
   "005",
-  "Phone 5",
+  "Chanchito 5",
   "Phone is fine, small, the wiew is large and beautiful",
   1000,
   90,
