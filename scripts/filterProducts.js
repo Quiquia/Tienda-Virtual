@@ -7,10 +7,6 @@ export function filterProducts(listProduct) {
 
   $inputSearch.addEventListener("keyup", (event) => {
     const eventTarget = event.target.value.toUpperCase();
-    console.log(
-      "🚀 ~ $inputSearch.addEventListener ~ eventTarget:",
-      eventTarget
-    );
     const valueSearch = eventTarget || "";
 
     const productFiltered = listProduct.filter((product) =>
