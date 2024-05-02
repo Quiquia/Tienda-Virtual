@@ -1,8 +1,9 @@
 import { printCards } from "./productCards.js";
+import { listProduct } from "./products.js";
 
 const $inputSearch = document.getElementById("search-input");
 
-export function filterProducts(listProduct) {
+function filterProducts(listProduct) {
   printCards(listProduct, "products");
 
   $inputSearch.addEventListener("keyup", (event) => {
@@ -16,3 +17,5 @@ export function filterProducts(listProduct) {
     printCards(productFiltered, "products");
   });
 }
+
+filterProducts(listProduct);

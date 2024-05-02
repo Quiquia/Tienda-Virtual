@@ -31,11 +31,6 @@
               width="218"
             />
           </a>
-          <div class="form">
-            <form action="">
-              <input id="" type="text" placeholder="Buscar" />
-            </form>
-          </div>
           <div class="social">
             <ul>
               <li>
@@ -53,15 +48,7 @@
             </ul>
           </div>
         </div>
-        <div class="nav">
-          <ul>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Cómo comprar</a></li>
-            <li><a href="#">Costos y tarifas</a></li>
-            <li><a href="#">Mis pedidos</a></li>
-            <li><a href="#">Garantia</a></li>
-          </ul>
-        </div>
+        <nav class="nav" id="nav"></nav>
         <div class="nav-toggle" id="nav-toggle">
           <i class="ri-menu-4-line"></i>
         </div>
@@ -70,8 +57,8 @@
 
     <main class="main">
       <div class="container">
-        <div class="block-product">
-          <div class="product-img-block">
+        <div class="block-product" id="details">
+          <!-- <div class="product-img-block">
             <div class="list-img">
               <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
               <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
@@ -85,22 +72,11 @@
             </div>
           </div>
 
-          <!-- <div class="product-images-block">
-            <div class="thumbnail-container">
-              <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
-            </div>
-            <div class="thumbnail-container">
-              <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
-            </div>
-            <img src="./assets/mock2.jpg" alt="MacBook Pro 15'4" />
-          </div> -->
-
           <div class="product-description-block">
             <h1 class="title-product">Macbook Pro 15'4</h1>
             <div class="select-color">
               <label class="subtitle" for="color">Color</label>
               <select type="text" placeholder="Selecciona un color">
-                <!-- Opciones de color aquí -->
                 <option value="value1">Value 1</option>
                 <option value="value2" selected>Value 2</option>
                 <option value="value3">Value 3</option>
@@ -146,7 +122,7 @@
               <span>1</span>
               <button>Añadir al Carrito</button>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="sales-block">
@@ -239,43 +215,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="columns-container" id="footer-columns">
-          <div class="col">
-            <ul>
-              <li><a href="#">Ofertas</a></li>
-              <li><a href="#">Laptops</a></li>
-              <li><a href="">Audio</a></li>
-              <li><a href="">Auriculares</a></li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li><a href="#">Cómo comprar</a></li>
-              <li><a href="#">Formas de pago</a></li>
-              <li><a href="">Envios</a></li>
-              <li><a href="">Devoluciones</a></li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li><a href="#">Costos y tarifas</a></li>
-              <li><a href="#">Impuestos</a></li>
-              <li><a href="">Facturación</a></li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li><a href="#">Mis pedidos</a></li>
-              <li><a href="#">Pedir nuevamente</a></li>
-              <li><a href="">Lista de deseos</a></li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li><a href="#">Garantía de entrega</a></li>
-            </ul>
-          </div>
-        </div>
+        <div class="columns-container" id="footer-columns"></div>
         <hr />
         <div class="copyright">
           <span class="copyright-copy">
@@ -284,6 +224,7 @@
         </div>
       </div>
     </footer>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js" type="module"></script>
+    <script src="./scripts/productDetails.js" type="module"></script>
   </body>
 </html>

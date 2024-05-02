@@ -11,156 +11,6 @@
 /*productOne.id = "id123";
 productOne["foto"] = "https://i.postimg.cc/Jn2C5W84/galaxy1.webp";*/
 
-class Product {
-  constructor(
-    id,
-    title,
-    description,
-    price,
-    discount,
-    stock,
-    img,
-    onsale,
-    supplier,
-    colors
-  ) {
-    this.id = id;
-    this.title = title;
-    this.description = description;
-    this.price = price;
-    this.discount = discount;
-    this.stock = stock;
-    this.img = img;
-    this.onsale = onsale;
-    this._supplier = supplier;
-    this.colors = colors;
-  }
-  get getSupplier() {
-    return this._supplier;
-  }
-  set setSupplier(newName) {
-    this._supplier = newName;
-  }
-  sellUnits(units) {
-    if (this.stock === 0 || this.stock - units <= 0) return;
-    this.stock = this.stock - units;
-  }
-}
-
-const listProduct = [];
-
-const prodOne = new Product(
-  "001",
-  "Xiami 1",
-  "Phone is fine, small, the wiew is large and beautiful",
-  1000,
-  50,
-  5,
-  [
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
-  ],
-  true,
-  "H&M",
-  ["Blue", "Red", "Yellow", "black"]
-);
-
-listProduct.push(prodOne);
-
-const prodTwo = new Product(
-  "002",
-  "Iphone 2",
-  "Phone is fine, small, the wiew is large and beautiful",
-  1000,
-  60,
-  5,
-  ["https://i.postimg.cc/Jn2C5W84/galaxy1.webp", "https://postimg.cc/JDxY0vVh"],
-  true,
-  "H&M",
-  ["Blue", "Red", "Yellow", "black"]
-);
-
-listProduct.push(prodTwo);
-
-const prodThree = new Product(
-  "003",
-  "Samsung 3",
-  "Phone is fine, small, the wiew is large and beautiful",
-  1000,
-  40,
-  5,
-  [
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
-  ],
-  true,
-  "H&M",
-  ["Blue", "Red", "Yellow", "black"]
-);
-
-listProduct.push(prodThree);
-
-const prodFour = new Product(
-  "004",
-  "Alcatel 4",
-  "Phone is fine, small, the wiew is large and beautiful",
-  1000,
-  60,
-  5,
-  [
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
-  ],
-  true,
-  "H&M",
-  ["Blue", "Red", "Yellow", "black"]
-);
-
-listProduct.push(prodFour);
-
-const prodFive = new Product(
-  "005",
-  "Chanchito 5",
-  "Phone is fine, small, the wiew is large and beautiful",
-  1000,
-  90,
-  5,
-  [
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
-  ],
-  true,
-  "H&M",
-  ["Blue", "Red", "Yellow", "black"]
-);
-
-listProduct.push(prodFive);
-
-const prodSix = new Product(
-  "006",
-  "Phone 6",
-  "Phone is fine, small, the wiew is large and beautiful",
-  1000,
-  30,
-  5,
-  [
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
-  ],
-  true,
-  "H&M",
-  ["Blue", "Red", "Yellow", "black"]
-);
-
-listProduct.push(prodSix);
-
-export { listProduct };
-
 /*
 export const products = [prodOne, prodTwo, prodThree, prodFour];
 
@@ -188,3 +38,164 @@ export function deleteArrayShiftPop() {
   console.log(lastProd);
 }
 */
+
+class Product {
+  constructor(
+    id,
+    title,
+    description,
+    price,
+    discount,
+    stock,
+    img,
+    onsale,
+    supplier,
+    colors,
+    tax
+  ) {
+    this.id = id;
+    this.title = title;
+    this.description = description;
+    this.price = price;
+    this.discount = discount;
+    this.stock = stock;
+    this.img = img;
+    this.onsale = onsale;
+    this._supplier = supplier;
+    this.colors = colors;
+    this.tax = tax;
+  }
+  get getSupplier() {
+    return this._supplier;
+  }
+  set setSupplier(newName) {
+    this._supplier = newName;
+  }
+  sellUnits(units) {
+    if (this.stock === 0 || this.stock - units <= 0) return;
+    this.stock = this.stock - units;
+  }
+}
+
+const listProduct = [];
+
+const prodOne = new Product(
+  "001",
+  "Xiami 1",
+  `Pantalla panorámica brillante o antirreflectante retroiluminada
+  por LED de 15,4 pulgadas (en diagonal) capaz de reproducir
+  millones de colores Resoluciones compatibles: 1.440 por 900
+  (nativa), 1.280 por 800, 1.152 por 720, 1.024 por 640 y 800`,
+  1000,
+  50,
+  5,
+  [
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://postimg.cc/JDxY0vVh",
+  ],
+  true,
+  "H&M",
+  ["Blue", "Red", "Yellow", "black"],
+  "Incluye Impuesto País y percepción AFIP"
+);
+
+listProduct.push(prodOne);
+
+const prodTwo = new Product(
+  "002",
+  "MacBook 15'",
+  "Phone is fine, small, the wiew is large and beautiful,Phone is fine, small, the wiew is large and beautiful",
+  1000,
+  60,
+  5,
+  ["https://i.postimg.cc/Jn2C5W84/galaxy1.webp", "https://postimg.cc/JDxY0vVh"],
+  true,
+  "H&M",
+  ["Blue", "Red", "Yellow", "black"],
+  "Incluye Impuesto País y percepción AFIP"
+);
+
+listProduct.push(prodTwo);
+
+const prodThree = new Product(
+  "003",
+  "Samsung 3",
+  "Phone is fine, small, the wiew is large and beautiful",
+  1000,
+  40,
+  5,
+  [
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://postimg.cc/JDxY0vVh",
+  ],
+  true,
+  "H&M",
+  ["Blue", "Red", "Yellow", "black"],
+  "Incluye Impuesto País y percepción AFIP"
+);
+
+listProduct.push(prodThree);
+
+const prodFour = new Product(
+  "004",
+  "Alcatel 4",
+  "Phone is fine, small, the wiew is large and beautiful",
+  1000,
+  60,
+  5,
+  [
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://postimg.cc/JDxY0vVh",
+  ],
+  true,
+  "H&M",
+  ["Blue", "Red", "Yellow", "black"],
+  "Incluye Impuesto País y percepción AFIP"
+);
+
+listProduct.push(prodFour);
+
+const prodFive = new Product(
+  "005",
+  "Chanchito 5",
+  "Phone is fine, small, the wiew is large and beautiful",
+  1000,
+  90,
+  5,
+  [
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://postimg.cc/JDxY0vVh",
+  ],
+  true,
+  "H&M",
+  ["Blue", "Red", "Yellow", "black"],
+  "Incluye Impuesto País y percepción AFIP"
+);
+
+listProduct.push(prodFive);
+
+const prodSix = new Product(
+  "006",
+  "Phone 6",
+  "Phone is fine, small, the wiew is large and beautiful",
+  1000,
+  30,
+  5,
+  [
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+    "https://postimg.cc/JDxY0vVh",
+  ],
+  true,
+  "H&M",
+  ["Blue", "Red", "Yellow", "black"],
+  "Incluye Impuesto País y percepción AFIP"
+);
+
+listProduct.push(prodSix);
+
+export { listProduct };
