@@ -92,7 +92,6 @@ const prodOne = new Product(
   [
     "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
     "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
   ],
   true,
   "H&M",
@@ -109,7 +108,7 @@ const prodTwo = new Product(
   1000,
   60,
   5,
-  ["https://i.postimg.cc/Jn2C5W84/galaxy1.webp", "https://postimg.cc/JDxY0vVh"],
+  ["https://i.postimg.cc/Jn2C5W84/galaxy1.webp"],
   true,
   "H&M",
   ["Blue", "Red", "Yellow", "black"],
@@ -128,7 +127,6 @@ const prodThree = new Product(
   [
     "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
     "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
   ],
   true,
   "H&M",
@@ -148,7 +146,6 @@ const prodFour = new Product(
   [
     "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
     "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
   ],
   true,
   "H&M",
@@ -160,19 +157,18 @@ listProduct.push(prodFour);
 
 const prodFive = new Product(
   "005",
-  "Chanchito 5",
+  "Carro",
   "Phone is fine, small, the wiew is large and beautiful",
   1000,
   90,
   5,
   [
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI-vK9hthvw1HKcEwyWPLyhTWyF1bnGswUQw&usqp=CAU",
+    "https://cdn.buttercms.com/NGzDkznNSIuTY6yrKMxA",
   ],
   true,
   "H&M",
-  ["Blue", "Red", "Yellow", "black"],
+  ["Blue", "Grey"],
   "Incluye Impuesto País y percepción AFIP"
 );
 
@@ -180,15 +176,14 @@ listProduct.push(prodFive);
 
 const prodSix = new Product(
   "006",
-  "Phone 6",
+  "Bicicleta",
   "Phone is fine, small, the wiew is large and beautiful",
   1000,
   30,
   5,
   [
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
-    "https://postimg.cc/JDxY0vVh",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHXH8PGaZZt-HIQp2P3tRP_f0UfYX_p6rrbQ&usqp=CAU",
+    "https://img.freepik.com/foto-gratis/juguete-bicicleta-vintage-metal-blanco-sobre-mesa-madera_155003-6411.jpg?w=826&t=st=1714985534~exp=1714986134~hmac=679fb1e60f36030ce8f2a2b9d5d2fceba22afb67628ab16c8be2c56edd1a700d",
   ],
   true,
   "H&M",

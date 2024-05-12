@@ -119,6 +119,7 @@ button {
   border: none;
   border-radius: 0.5rem;
   padding: 0.75rem 2rem;
+  cursor: pointer;
 }
 
 .sales-block h1 {

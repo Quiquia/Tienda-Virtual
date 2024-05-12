@@ -4,6 +4,7 @@ const options = [
   { title: "Ofertas", linkTo: "#" },
   { title: "Cómo comprar", linkTo: "#" },
   { title: "Costos y tarifas", linkTo: "#" },
+  { title: "Mis pedidos", linkTo: "cart.html" },
   { title: "Garantía", linkTo: "#" },
 ];
 
