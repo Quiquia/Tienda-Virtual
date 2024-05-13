@@ -1,4 +1,6 @@
 const $navSelector = document.getElementById("nav");
+const $social = document.getElementById("social");
+const keyIsOnline = "isOnline";
 
 const options = [
   { title: "Ofertas", linkTo: "#" },
@@ -71,4 +73,40 @@ export function generateNavigationFooter() {
     $div.appendChild($ul);
     $footerNav.appendChild($div);
   }
+}
+
+let isOnline = JSON.parse(localStorage.getItem(keyIsOnline)) || false;
+
+export function generateNavigationSocial() {
+  const templateSocial = `
+            <ul class="list-social">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li id='cart' class='${isOnline ? "hidden" : ""}'>
+              <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+            <button id="button-social">
+              <i class="${isOnline ? "fa-solid fa-user" : ""}"></i>
+            </button>
+       `;
+
+  $social.innerHTML = templateSocial;
+  const $buttonSocial = document.getElementById("button-social");
+  const $listSocial = document.querySelector(".list-social");
+  const $cartIcon = $listSocial.querySelector("#cart");
+  const $iconUser = $buttonSocial.querySelector(".fa-solid");
+
+  $buttonSocial.addEventListener("click", () => {
+    isOnline = !isOnline;
+    $cartIcon.classList.toggle("hidden");
+    $iconUser.classList.remove(isOnline ? "fa-regular" : "fa-solid");
+    $iconUser.classList.add(isOnline ? "fa-solid" : "fa-regular");
+
+    localStorage.setItem(keyIsOnline, JSON.stringify(isOnline));
+  });
 }

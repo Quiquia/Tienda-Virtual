@@ -1,4 +1,9 @@
-import { generateNavNavigation, generateNavigationFooter } from "./layout.js";
+import {
+  generateNavNavigation,
+  generateNavigationFooter,
+  generateNavigationSocial,
+} from "./layout.js";
 
 generateNavNavigation();
 generateNavigationFooter();
+generateNavigationSocial();
