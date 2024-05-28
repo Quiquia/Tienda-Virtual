@@ -1,0 +1,35 @@
+{
+  "header": [
+    { "title": "Ofertas", "linkTo": "#" },
+    { "title": "Cómo comprar", "linkTo": "#" },
+    { "title": "Costos y tarifas", "linkTo": "#" },
+    { "title": "Mis pedidos", "linkTo": "cart.html" },
+    { "title": "Garantía", "linkTo": "#" }
+  ],
+
+  "footer": [
+    [
+      { "title": "OFERTAS", "linkTo": "#" },
+      { "title": "Laptops", "linkTo": "#" },
+      { "title": "Audio", "linkTo": "#" },
+      { "title": "Auriculares", "linkTo": "#" }
+    ],
+    [
+      { "title": "Cómo Comprar", "linkTo": "#" },
+      { "title": "Formas de pago", "linkTo": "#" },
+      { "title": "Envios", "linkTo": "#" },
+      { "title": "Devoluciones", "linkTo": "#" }
+    ],
+    [
+      { "title": "COSTO Y TARIFAS", "linkTo": "#" },
+      { "title": "Impuestos", "linkTo": "#" },
+      { "title": "Facturación", "linkTo": "#" }
+    ],
+    [
+      { "title": "MIS PEDIDOS", "linkTo": "#" },
+      { "title": "Pedir nuevamente", "linkTo": "#" },
+      { "title": "Lista de deseos", "linkTo": "#" }
+    ],
+    [{ "title": "GARANTÍA DE ENTREGA", "linkTo": "#" }]
+  ]
+}

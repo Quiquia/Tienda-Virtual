@@ -1,3 +1,7 @@
+const keyIsFavorite = "isFavorite";
+
+let isFavorite = JSON.parse(localStorage.getItem(keyIsFavorite)) || false;
+
 export function createCard(product) {
   return `
           <article class="product-card">
@@ -16,6 +20,12 @@ export function createCard(product) {
                 <div class="product-tax-policy">
                   ${product.tax}
                 </div>
+                <button class="button-favorite" id="button-favorite">
+                <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="button-trash" id="button-trash">
+                <i class="fa-solid fa-trash"></i>
+                </button>
               </div>
             </a>
           </article>
@@ -30,4 +40,18 @@ export function printCards(arrayOfProducts, idSelector) {
   }
   const $productSelector = document.getElementById(idSelector);
   $productSelector.innerHTML = productTemplate;
+
+  const $buttonFavorite = document.getElementById("button-favorite");
+  const $iconHeart = $buttonFavorite.querySelector(".fa-solid");
+
+  $buttonFavorite.addEventListener("click", () => {
+    isFavorite = !isFavorite;
+    if (isFavorite) {
+      $iconHeart.classList.remove("fa-solid");
+      $iconHeart.classList.add("fa-regular");
+    } else {
+      $iconHeart.classList.add("fa-solid");
+      $iconHeart.classList.remove("fa-regular");
+    }
+  });
 }

@@ -1,0 +1,108 @@
+.form-container {
+  max-width: 1220px;
+  margin: 2rem auto;
+  padding: 5px;
+  height: inherit;
+}
+
+.form-container .form,
+.register {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 350px;
+  gap: 1rem;
+}
+.form h2 {
+  text-align: center;
+}
+.form-date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.form-date input {
+  padding: 0.5rem;
+}
+
+.forgot-password {
+  font-size: 0.85rem;
+  text-align: right;
+  color: rgb(12, 114, 198);
+  font-weight: 500;
+}
+
+.button-form,
+.button-register {
+  border-radius: 2px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.polity {
+  font-size: 0.6rem;
+  color: #908e8e;
+}
+
+.facebook-google {
+  font-weight: bold;
+  color: rgb(93, 90, 90);
+}
+.polity a {
+  color: blue;
+}
+
+.button-register {
+  color: black;
+  background: hwb(40deg 42.84% 56.06% / 16%);
+}
+
+.register {
+  margin-top: 2rem;
+  gap: 1.25rem;
+}
+
+.register-cuenta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cuenta {
+  font-size: 0.8rem;
+  color: #908e8e;
+  padding-inline: 1rem;
+}
+
+.register-cuenta .raya {
+  border-bottom: 1px solid #908e8e;
+  flex: 1;
+}
+
+.register .polity {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(93, 90, 90);
+}
+
+.register .polity a {
+  color: #908e8e;
+  text-decoration: underline;
+}
+
+.button-register a {
+  text-decoration: none;
+  color: black;
+}
+
+.password-caracteres {
+  font-size: 0.65rem;
+}
+
+.input-check {
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

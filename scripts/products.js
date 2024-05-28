@@ -1,44 +1,3 @@
-/*export const productOne = {
-  nombre: "Celular",
-  precio: 20000,
-  stock: 2,
-};*/
-
-/* Para agregar propiedades dentro de un objeto se agrega con un "." o
- con un ["..."]  dentro del [" se tiene que poner en comillas
- si es string pero si la clave es número no es necesario poner los corchetes"]*/
-
-/*productOne.id = "id123";
-productOne["foto"] = "https://i.postimg.cc/Jn2C5W84/galaxy1.webp";*/
-
-/*
-export const products = [prodOne, prodTwo, prodThree, prodFour];
-
-const lastProduct = products.length - 1;
-
-const printProduct = products[lastProduct].title;
-
-export function addArrayUnshiftPush() {
-  // agregar al INICIO en una ARRAY : unshift y retorna el nuevo tamaño del array
-  const firstProd = products.unshift(prodFive);
-  console.log(firstProd);
-
-  // agregar al FINAL en una ARRAY : push y retorna el nuevo tamaño del array
-  const lastProd = products.push(prodSix);
-  console.log(lastProd);
-}
-
-export function deleteArrayShiftPop() {
-  // ELIMINA al INICIO en una ARRAY : shift y retorna el nuevo tamaño del array
-  const firstProd = products.shift(prodFive);
-  console.log(firstProd);
-
-  const lastProd = products.pop(prodSix);
-  // DELETE al FINAL en una ARRAY : pop y retorna el nuevo tamaño del array
-  console.log(lastProd);
-}
-*/
-
 class Product {
   constructor(
     id,
@@ -82,10 +41,7 @@ const listProduct = [];
 const prodOne = new Product(
   "001",
   "Xiami 1",
-  `Pantalla panorámica brillante o antirreflectante retroiluminada
-  por LED de 15,4 pulgadas (en diagonal) capaz de reproducir
-  millones de colores Resoluciones compatibles: 1.440 por 900
-  (nativa), 1.280 por 800, 1.152 por 720, 1.024 por 640 y 800`,
+  `Pantalla panorámica brillante o antirreflectante retroiluminada por LED de 15,4 pulgadas (en diagonal) capaz de reproducir millones de colores Resoluciones compatibles: 1.440 por 900 (nativa), 1.280 por 800, 1.152 por 720, 1.024 por 640 y 800`,
   1000,
   50,
   5,

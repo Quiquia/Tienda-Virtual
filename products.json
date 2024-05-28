@@ -1,0 +1,19 @@
+[
+  {
+    "id": "001",
+    "title": "Xiami 1",
+    "description": "Pantalla panorámica brillante o antirreflectante retroiluminada por LED de 15,4 pulgadas (en diagonal) capaz de reproducir millones de colores Resoluciones compatibles: 1.440 por 900 (nativa), 1.280 por 800, 1.152 por 720, 1.024 por 640 y 800",
+    "price": 1000,
+    "discount": 50,
+    "stock": 5,
+    "img": [
+      "https://i.postimg.cc/Jn2C5W84/galaxy1.webp",
+      "https://i.postimg.cc/Jn2C5W84/galaxy1.webp"
+    ],
+    "onsale": true,
+    "supplier": "H&M",
+    "colors": ["Blue", "Red", "Yellow", "black"],
+    "ta": "Incluye Impuesto País y percepción AFIP"
+  },
+  {}
+]
